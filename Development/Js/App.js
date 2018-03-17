@@ -1,9 +1,13 @@
-var React = require('react');
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Landing from './Landing'
 
-var Comp = React.createClass({
-	render: function() {
-		return <div>Hello</div>
+class Main extends React.Component {
+	render () {
+		return (
+			<Landing />
+		)
 	}
-});
+}
 
-ReactDOM.render(<Comp />, document.getElementById('app'));
+ReactDOM.render(<Main />, document.getElementById('app'))

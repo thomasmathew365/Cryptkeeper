@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+
 module.exports = {
 		entry: ['./Development/Js/App.js'],
 		output: {
