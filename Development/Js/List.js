@@ -7,11 +7,11 @@ class ListMain extends React.Component {
 
   render () {
     var rows = this.props.listData.map((asset) => {
-      <ListItem itemData={asset[0]}/>
+      return <ListItem key={'listItemRow_' + asset.id } itemData={asset}/>
     })
     return (
       <div>
-          {rows}
+        {rows}
       </div>
     )
   }
@@ -23,10 +23,9 @@ class ListItem extends React.Component {
   }
 
   render () {
-    console.log(this.props)
     return (
       <div>
-        {this.props.itemData.name}
+        {this.props.itemData.name + ' ' + this.props.itemData.symbol}
       </div>
     )
   }
