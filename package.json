@@ -4,9 +4,9 @@
 	"description": "cryto currency vault.",
 	"main": "index.js",
 	"scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/thomasmathew365/Cryptkeeper.git"

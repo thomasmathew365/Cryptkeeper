@@ -2,9 +2,11 @@ var express = require('express');
 var app = express();
 
 const port = 3000;
+app.use('/static', express.static(__dirname + '/public'));
+app.use(express.static('static'));
 
 app.get('/',function (req, res) {
-  res.send("Hello, World!");
+  res.sendfile('./views/index.html');
 });
 
 
